@@ -15,7 +15,7 @@ const notificationRoutes = require('./routes/notifications');
 
 const app = express();
 const server = http.createServer(app);
-const CLIENT_URL = process.env.CLIENT_URL || 'https://socialwave-wlqe.onrender.com';
+const CLIENT_URL = process.env.CLIENT_URL || '';
 const corsOptions = {
   origin: process.env.NODE_ENV === 'development' ? true : CLIENT_URL,
   credentials: true,

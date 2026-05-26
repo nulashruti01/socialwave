@@ -17,7 +17,7 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook"
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "https://socialwave-wlqe.onrender.com",
   "eslintConfig": { "extends": ["react-app"] },
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
