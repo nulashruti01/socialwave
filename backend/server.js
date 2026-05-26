@@ -15,7 +15,7 @@ const notificationRoutes = require('./routes/notifications');
 
 const app = express();
 const server = http.createServer(app);
-const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:3000';
+const CLIENT_URL = process.env.CLIENT_URL || 'https://socialwave-wlqe.onrender.com';
 const corsOptions = {
   origin: process.env.NODE_ENV === 'development' ? true : CLIENT_URL,
   credentials: true,
@@ -75,4 +75,4 @@ mongoose
     console.error('❌ MongoDB connection error:', err.message);
     process.exit(1);
   });
-
+module.exports = app;
