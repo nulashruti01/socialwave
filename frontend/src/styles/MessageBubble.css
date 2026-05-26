@@ -1,0 +1,12 @@
+.message-bubble { display: flex; margin-bottom: 8px; }
+.message-bubble.own { justify-content: flex-end; }
+.message-bubble.other { justify-content: flex-start; }
+.bubble-content { max-width: 60%; padding: 10px 14px; border-radius: 12px; background: var(--bg-secondary); border: 1px solid var(--border-color); word-wrap: break-word; }
+.message-bubble.own .bubble-content { background: var(--accent); color: white; border: none; }
+.message-text { margin: 0; font-size: 0.95rem; line-height: 1.4; }
+.message-media { margin-top: 8px; display: flex; flex-direction: column; gap: 8px; }
+.media-item { max-width: 100%; }
+.media-image { max-width: 100%; border-radius: 8px; height: auto; display: block; }
+.media-video { max-width: 100%; border-radius: 8px; height: auto; max-height: 300px; }
+.message-time { display: block; font-size: 0.75rem; color: var(--text-secondary); margin-top: 4px; }
+.message-bubble.own .message-time { color: rgba(255, 255, 255, 0.7); }

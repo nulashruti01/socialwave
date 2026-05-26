@@ -1,0 +1,30 @@
+.post-card { margin-bottom: 1rem; transition: transform 0.15s ease, border-color 0.15s ease; }
+.post-card:hover { transform: translateY(-1px); }
+.post-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem; }
+.post-author-link { display: flex; align-items: center; gap: 0.65rem; text-decoration: none; color: var(--text); }
+.post-author-link:hover .post-username { color: var(--accent); }
+.post-username { display: block; font-weight: 600; font-size: 0.9rem; transition: color var(--transition); }
+.post-time { display: block; font-size: 0.75rem; color: var(--text-muted); }
+.post-content { font-size: 0.975rem; line-height: 1.7; color: var(--text); margin-bottom: 1rem; white-space: pre-wrap; word-break: break-word; }
+.post-images { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; margin-bottom: 1rem; }
+.post-image-wrapper { position: relative; width: 100%; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 16px; background: var(--bg-3); }
+.post-image { width: 100%; height: 100%; object-fit: cover; display: block; }
+.post-delete-btn { color: var(--text-muted); }
+.post-delete-btn:hover { color: var(--danger) !important; }
+.post-actions { display: flex; gap: 0.5rem; padding-top: 0.75rem; border-top: 1px solid var(--border); }
+.action-btn {
+  display: flex; align-items: center; gap: 0.4rem; background: none; border: none;
+  color: var(--text-muted); font-family: var(--font); font-size: 0.875rem; font-weight: 500;
+  cursor: pointer; padding: 0.35rem 0.7rem; border-radius: var(--radius-full); transition: all var(--transition);
+}
+.action-btn:hover { background: var(--bg-3); color: var(--text); }
+.action-btn.liked { color: #f43f5e; }
+.action-btn.liked:hover { background: rgba(244,63,94,0.1); }
+.comments-section { margin-top: 1rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+.comments-list { display: flex; flex-direction: column; gap: 0.65rem; margin-bottom: 0.85rem; }
+.comment-item { display: flex; align-items: flex-start; gap: 0.6rem; }
+.comment-body { background: var(--bg-3); border-radius: var(--radius-sm); padding: 0.45rem 0.75rem; flex: 1; font-size: 0.875rem; }
+.comment-username { font-weight: 600; color: var(--accent); text-decoration: none; margin-right: 0.5rem; font-size: 0.8rem; }
+.comment-username:hover { color: var(--accent-hover); }
+.comment-form { display: flex; align-items: center; gap: 0.6rem; }
+.comment-input { flex: 1; padding: 0.45rem 0.85rem; font-size: 0.875rem; border-radius: var(--radius-full); }

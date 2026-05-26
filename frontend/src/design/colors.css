@@ -1,0 +1,24 @@
+/* Design tokens (CSS variables) for SocialWave - local copy for CRA */
+:root {
+  --sw-bg: #0B1020;
+  --sw-surface: rgba(255,255,255,0.04);
+  --sw-surface-light: rgba(255,255,255,0.6);
+  --sw-accent-mint: #7AF7E1;
+  --sw-accent-violet: #7B83FF;
+  --sw-accent-warm: #FF6B6B;
+  --sw-muted: #98A0B3;
+  --sw-text: #E6EEF7;
+  --sw-success: #22C55E;
+  --sw-warning: #FFB020;
+  --sw-gradient-midnight: linear-gradient(120deg, #0B1020 0%, #7B83FF 100%);
+  --sw-glass-bg: rgba(255,255,255,0.04);
+  --sw-glass-border: rgba(255,255,255,0.06);
+  --sw-radius-sm: 8px;
+  --sw-radius-md: 12px;
+  --sw-radius-lg: 20px;
+  --sw-radius-pill: 9999px;
+  --sw-elevation-1: 0 6px 18px rgba(2,6,23,0.45);
+  --sw-elevation-2: 0 12px 30px rgba(2,6,23,0.55);
+  --sw-motion-fast: 120ms;
+  --sw-motion-base: 220ms;
+}

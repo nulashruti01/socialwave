@@ -1,0 +1,12 @@
+const express = require('express');
+const router = express.Router();
+const { getUserProfile, updateProfile, toggleFollow, searchUsers, getSuggestedUsers, toggleSavePost, getSavedPosts } = require('../controllers/userController');
+const { protect } = require('../middleware/auth');
+router.get('/search', protect, searchUsers);
+router.get('/suggested', protect, getSuggestedUsers);
+router.get('/saved', protect, getSavedPosts);
+router.get('/:username', getUserProfile);
+router.put('/profile', protect, updateProfile);
+router.post('/:id/follow', protect, toggleFollow);
+router.post('/:postId/save', protect, toggleSavePost);
+module.exports = router;
