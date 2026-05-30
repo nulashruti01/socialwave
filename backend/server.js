@@ -17,7 +17,7 @@ const app = express();
 const server = http.createServer(app);
 const CLIENT_URL = process.env.CLIENT_URL || 'https://socialwave-frontend-d9if7dqp1-sn01-s-projects.vercel.app';
 const corsOptions = {
-  origin:['https://socialwave-frontend.vercel.app', 'https://socialwave-frontend-d9if7dqp1-sn01-s-projects.vercel.app', 'http://localhost:3000'],  
+  origin: true,
   credentials: true,
 };
 
